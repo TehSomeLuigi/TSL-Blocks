@@ -1,0 +1,21 @@
+{
+  "modinfoversion": 2,
+  "modlist": [{
+    "modid": "sl_TSLBlocks",
+    "name": "TSL-Blocks",
+    "description": "Adds some building blocks which generally do not serve anything other than being a block.",
+    "version": "1.0",
+    "mcversion": "1.6.2",
+    "url": "",
+    "updateUrl": "",
+    "authors": [ "TehSomeLuigi" ],
+    "credits": "Authored by TehSomeLuigi",
+    "logoFile": "",
+    "screenshots": [],
+    "parent": "",
+    "requiredMods": [ "Forge" ],
+    "dependencies": [ "Forge" ],
+    "dependants": [ "" ],
+    "useDependencyInformation": "true"
+  }]
+}
