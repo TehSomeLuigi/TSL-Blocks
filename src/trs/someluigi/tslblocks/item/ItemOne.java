@@ -25,18 +25,32 @@ public class ItemOne extends Item {
 	public String getUnlocalizedName(ItemStack i) {
 		return "sl_extramisc:itemone_" + i.getItemDamage();
 	}
-
-    @Override
-    public int getMetadata(int par1) {
-        return par1;
-    }
-
-    @Override
-    @SideOnly(Side.CLIENT)
-    public Icon getIconFromDamage(int par1) {
-    	// TODO add icon
-    	return null;
-    }
 	
+	@Override
+	public int getMetadata(int par1) {
+		return par1;
+	}
+
+	@Override
+	@SideOnly(Side.CLIENT)
+	public Icon getIconFromDamage(int par1) {
+		return this.itemIcon;
+	}
 	
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void registerIcons(IconRegister ir) {
+		this.itemIcon = ir.registerIcon("sl_extramisc:i1_0");
+	}
+	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void addInformation(ItemStack iStack, EntityPlayer player, List list, boolean someBool) {
+		switch (iStack.getItemDamage()) {
+			case 0:
+				list.add("Item One");
+			break;
+		}
+	}
 }
