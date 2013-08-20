@@ -4,8 +4,8 @@
 		{
 			"modid": "sl_extramisc",
 			"name": "ExtraMisc",
-			"description": "Adds some miscellaneous things to the wonders of Minecraft.",
-			"version": "1.0",
+			"description": "Adds some miscellaneous things to the wonders of Minecraft. Currently: Dyed Ice",
+			"version": "@VERSION@",
 			"mcversion": "1.6.2",
 			"url": "",
 			"updateUrl": "",
