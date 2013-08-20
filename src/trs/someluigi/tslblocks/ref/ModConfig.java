@@ -5,7 +5,7 @@ import net.minecraftforge.common.Configuration;
 public class ModConfig {
 	
 	// Block IDs
-	public static int bOne;
+	public static int bDyedIce;
 	
 	// Item IDs
 	public static int iOne;
@@ -14,7 +14,7 @@ public class ModConfig {
 	public static void handleMain(Configuration config) {
 		config.load();
 		
-		bOne = config.getBlock("block", "blockOne", 1800, "BlockID#1 of this mod.").getInt(1800);
+		bDyedIce = config.getBlock("block", "dyedIce", 1800, "BlockID of dyed ice. -1 removes my dyed ice from the game.").getInt(1800);
 		
 		iOne = config.getItem("item", "itemOne", 7900, "ItemID#1 of this mod.").getInt(7900);
 		
