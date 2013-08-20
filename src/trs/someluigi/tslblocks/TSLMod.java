@@ -14,8 +14,6 @@ public class TSLMod {
 	
 	@EventHandler
 	public void preinit(FMLPreInitializationEvent e) {
-		System.out.println("SLTSL PreInit");
-		
 		Configuration config = new Configuration(e.getSuggestedConfigurationFile());
 		
 		ModConfig.handleMain(config);
@@ -26,12 +24,11 @@ public class TSLMod {
 	
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
-		System.out.println("SLTSL Init");
+		ModInst.registerRecipes();
 	}
 	
 	@EventHandler
 	public void postinit(FMLPostInitializationEvent e) {
-		System.out.println("SLTSL PostInit");
 	}
 	
 }
