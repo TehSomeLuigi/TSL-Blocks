@@ -75,6 +75,8 @@ public class ModInst {
 		if (ModConfig.bCharcoal != -1) {
 			GameRegistry.addRecipe(new ItemStack(bCharcoal, 1, 0), new Object[]{ "ccc", "ccc", "ccc", 'c', new ItemStack(Item.coal, 1, 1)});
 			GameRegistry.addRecipe(new ItemStack(Item.coal, 9, 1), new Object[]{ "b", 'b', new ItemStack(bCharcoal, 1, 0)});
+			
+			GameRegistry.registerFuelHandler(new FuelHandler());
 		}
 		
 	}
